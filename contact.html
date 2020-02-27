@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>LenkinWeb - web design and development</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-color ">
+        <div class="d-flex nav-logo">
+          <img src="Pictures/logo2.png" alt="logo" id="logo" />
+          <div>
+            <h5 class="nav-who">LenkinWeb</h5>
+            <h6 class="text-center nav-who2">Web Design & Development</h6>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="nav-container collapse navbar-collapse text-right"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav flex-wrap ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--header-->
+    <header>
+      <h1 class="title text-center">Contact Me</h1>
+    </header>
+    <!--form-->
+    <div class="container form-div">
+      <form
+        id="contact-form"
+        class="form-horizontal"
+        method="post"
+        action="sendmail.php"
+      >
+        <input type="hidden" name="redirect" value="#" />
+        <div id="form-group">
+          <div>
+            <label for="title" id="title">Title:</label>
+            <select id="dropdown" name="title" class="dropdown form-control">
+              <option disabled value>Select an option</option>
+              <option value="Mr">Mr</option>
+              <option value="Ms">Ms</option>
+              <option value="Miss">Miss</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Dr">Dr</option>
+              <option value="Prof">Prof</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="name" id="name-label">First Name:</label>
+            <input
+              id="name"
+              autofocus
+              type="text"
+              name="name"
+              class="input-field form-control"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div>
+            <label for="name" id="name-label">Surname:</label>
+            <input
+              id="name"
+              autofocus
+              type="text"
+              name="surname"
+              class="input-field form-control"
+              placeholder="Enter your surname"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              class="input-field form-control"
+              id="email"
+              required
+              placeholder="Enter your Email"
+            />
+          </div>
+          <div>
+            <label for="message" id="message-label">Message:</label>
+            <textarea
+              id="message"
+              class="input-field form-control"
+              name="message"
+              placeholder="Enter your message here"
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            id="submit"
+            type="submit"
+            name="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <!--footer-->
+  <footer class="text-center">
+    &copy; LenkinWeb, Elena Kosobrodova
+  </footer>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+  integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+  integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+  crossorigin="anonymous"
+></script>

@@ -1,0 +1,23 @@
+{
+  "name": "lenkinweb",
+  "version": "1.0.0",
+  "description": "a portfolio of Elena Kosobrodova, a web developer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel -p 1236 index.html"
+  },
+  "keywords": [
+    "LenkinWeb",
+    "portfolio",
+    "web",
+    "developer",
+    "front",
+    "end"
+  ],
+  "author": "Elena Kosobrodova",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
